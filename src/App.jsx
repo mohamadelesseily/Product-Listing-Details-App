@@ -22,7 +22,6 @@ import {
 import { useDispatch, useSelector } from 'react-redux'
 import { fetchProductById, fetchProducts, logIn, logOut } from './store'
 
-// This component is used around pages that should only be visible after login.
 function ProtectedRoute({ children }) {
   const isLoggedIn = useSelector((state) => state.auth.isLoggedIn)
   return isLoggedIn ? children : <Navigate to="/login" replace />
