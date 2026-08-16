@@ -1,6 +1,5 @@
 import { configureStore, createAsyncThunk, createSlice } from '@reduxjs/toolkit'
 
-// createAsyncThunk keeps the loading, success, and error states in one clear place.
 export const fetchProducts = createAsyncThunk('products/fetchProducts', async () => {
   const response = await fetch('https://dummyjson.com/products?limit=30')
   if (!response.ok) throw new Error('Could not load products. Please try again.')
