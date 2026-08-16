@@ -1,3 +1,6 @@
+import { createSlice } from '@reduxjs/toolkit'
+import { fetchProducts, fetchProductById } from './thunks'
+
 export const productsSlice = createSlice({
   name: 'products',
   initialState: { items: [], selectedProduct: null, status: 'idle', detailsStatus: 'idle', error: '' },

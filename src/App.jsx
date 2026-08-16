@@ -25,7 +25,7 @@ import LoginPage from './Pages/Login/Login.jsx'
 import ProtectedRoute from './Pages/protectedRoutes/protectedRoute.jsx'
 import Header from './Pages/Header/Header.jsx'
 import ProductsPage from './Pages/products/products.jsx'
-import ProductDetailsPage from './Pages/productDetails/productDetails.jsx'
+import ProductDetailsPage from './Pages/products/productDetails.jsx'
 
 function App() {
   return (

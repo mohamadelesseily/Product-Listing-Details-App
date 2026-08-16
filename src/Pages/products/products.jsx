@@ -1,3 +1,10 @@
+import { useEffect, useState } from 'react'
+import { useDispatch, useSelector } from 'react-redux'
+import { useNavigate, Link as RouterLink } from 'react-router-dom'
+import { Alert, Box, CircularProgress, Container, Grid, TextField, Typography, Card, CardContent, CardMedia, Button } from '@mui/material'
+import { fetchProducts } from '../../store'
+import Header from '../Header/Header'
+
 export default function ProductsPage() {
   const dispatch = useDispatch()
   const { items, status, error } = useSelector((state) => state.products)
