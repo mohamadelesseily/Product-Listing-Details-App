@@ -4,7 +4,7 @@ import { useNavigate, Link as RouterLink } from 'react-router-dom'
 import { Alert, Box, CircularProgress, Container, Grid, TextField, Typography, Card, CardContent, CardMedia, Button } from '@mui/material'
 import { fetchProducts } from '../../store'
 import Header from '../../Components/Header/Header'
-import { filterProductsByTitle } from '../../Components/filter/filterProducts'
+import { filterProductsByTitle } from '../../filter/filterProducts'
 
 export default function ProductsPage() {
   const dispatch = useDispatch()
