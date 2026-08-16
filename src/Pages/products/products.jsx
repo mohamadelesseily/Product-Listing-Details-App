@@ -4,6 +4,7 @@ import { useNavigate, Link as RouterLink } from 'react-router-dom'
 import { Alert, Box, CircularProgress, Container, Grid, TextField, Typography, Card, CardContent, CardMedia, Button } from '@mui/material'
 import { fetchProducts } from '../../store'
 import Header from '../../Components/Header/Header'
+import { filterProductsByTitle } from '../../Components/filter/filterProducts'
 
 export default function ProductsPage() {
   const dispatch = useDispatch()
@@ -14,9 +15,7 @@ export default function ProductsPage() {
     if (status === 'idle') dispatch(fetchProducts())
   }, [dispatch, status])
 
-  const visibleProducts = items.filter((product) =>
-    product.title.toLowerCase().includes(searchText.toLowerCase()),
-  )
+  const visibleProducts = filterProductsByTitle(items, searchText)
 
   return (
     <>
