@@ -2,8 +2,8 @@ import { configureStore } from '@reduxjs/toolkit'
 import { authSlice } from './Slices/authentication'
 import { productsSlice } from './Slices/products'
 
-export { fetchProducts } from './Slices/fetch'
-export { fetchProductById } from './Slices/fethById'
+export { fetchProducts } from './Slices/products/fetch'
+export { fetchProductById } from './Slices/products/fethById'
 
 export const { logIn, logOut } = authSlice.actions
 

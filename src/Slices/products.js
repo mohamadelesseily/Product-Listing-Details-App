@@ -1,6 +1,6 @@
 import { createSlice } from '@reduxjs/toolkit'
-import { fetchProducts } from './fetch'
-import { fetchProductById } from './fethById'
+import { fetchProducts } from './products/fetch'
+import { fetchProductById } from './products/fethById'
 
 export const productsSlice = createSlice({
   name: 'products',
