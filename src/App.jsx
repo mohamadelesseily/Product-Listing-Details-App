@@ -23,7 +23,7 @@ import { useDispatch, useSelector } from 'react-redux'
 import { fetchProductById, fetchProducts, logIn, logOut } from './store'
 import LoginPage from './Pages/Login/Login.jsx'
 import ProtectedRoute from './Pages/protectedRoutes/protectedRoute.jsx'
-import Header from './Pages/Header/Header.jsx'
+import Header from './Components/Header/Header.jsx'
 import ProductsPage from './Pages/products/products.jsx'
 import ProductDetailsPage from './Pages/products/productDetails.jsx'
 
