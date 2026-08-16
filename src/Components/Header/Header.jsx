@@ -13,7 +13,7 @@ export default function Header() {
   }
 
   return (
-    <AppBar position="sticky">
+    <AppBar position="sticky">n
       <Toolbar>
         <Typography component={RouterLink} to="/products" variant="h6" className="brand">
           Simple Shop
