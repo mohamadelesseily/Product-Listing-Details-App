@@ -30,32 +30,55 @@ function App() {
     palette: {
       mode,
       primary: {
-        main: mode === 'light' ? '#2563eb' : '#7dd3fc',
+        main: mode === 'light' ? '#101010' : '#f5f5f5',
       },
       secondary: {
-        main: mode === 'light' ? '#f97316' : '#fb923c',
+        main: mode === 'light' ? '#393939' : '#d4d4d4',
+        contrastText: mode === 'light' ? '#ffffff' : '#111111',
       },
       background: {
-        default: mode === 'light' ? '#f4f7fb' : '#0f172a',
-        paper: mode === 'light' ? '#ffffff' : '#162033',
+        default: mode === 'light' ? '#fafafa' : '#101010',
+        paper: mode === 'light' ? '#ffffff' : '#181818',
+      },
+      text: {
+        primary: mode === 'light' ? '#101010' : '#f5f5f5',
+        secondary: mode === 'light' ? '#6f6f6f' : '#a3a3a3',
       },
     },
     shape: {
       borderRadius: 8,
     },
     typography: {
-      fontFamily: '"Inter", "Segoe UI", Roboto, Arial, sans-serif',
+      fontFamily: '"Nunito", "Avenir Next", "Trebuchet MS", "Segoe UI", Arial, sans-serif',
       h4: {
-        fontWeight: 800,
+        fontSize: '1.85rem',
+        fontWeight: 760,
+        letterSpacing: 0,
       },
       h5: {
-        fontWeight: 800,
+        fontSize: '1.35rem',
+        fontWeight: 760,
+        letterSpacing: 0,
       },
       h6: {
-        fontWeight: 750,
+        fontSize: '1.02rem',
+        fontWeight: 730,
+        letterSpacing: 0,
+      },
+      body1: {
+        fontSize: '0.92rem',
+        lineHeight: 1.55,
+        letterSpacing: 0,
+      },
+      body2: {
+        fontSize: '0.82rem',
+        lineHeight: 1.55,
+        letterSpacing: 0,
       },
       button: {
+        fontSize: '0.82rem',
         fontWeight: 700,
+        letterSpacing: 0,
         textTransform: 'none',
       },
     },
@@ -64,6 +87,10 @@ function App() {
         styleOverrides: {
           root: {
             borderRadius: 8,
+            boxShadow: 'none',
+            '&:hover': {
+              boxShadow: 'none',
+            },
           },
         },
       },
@@ -78,6 +105,21 @@ function App() {
         styleOverrides: {
           root: {
             backgroundImage: 'none',
+          },
+        },
+      },
+      MuiOutlinedInput: {
+        styleOverrides: {
+          root: {
+            borderRadius: 8,
+          },
+        },
+      },
+      MuiChip: {
+        styleOverrides: {
+          root: {
+            borderRadius: 8,
+            fontWeight: 700,
           },
         },
       },
