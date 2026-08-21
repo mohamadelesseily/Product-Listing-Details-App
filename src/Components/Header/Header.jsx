@@ -19,7 +19,7 @@ export default function Header() {
     <AppBar position="sticky" elevation={0} className="app-header">
       <Toolbar className="app-toolbar">
         <Typography component={RouterLink} to="/products" variant="h6" className="brand">
-          Simple Shop
+          Shop
         </Typography>
         <Box sx={{ flexGrow: 1 }} />
         <Box className="header-actions">
